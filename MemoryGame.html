@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Game with JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="game">
+        <h1>MEMORY GAME</h1>
+        <div class="controls">
+            <button class="start">Start</button>
+            <button class="pause">Pause</button>
+            <button class="quit">Quit</button>
+            <div class="stats">
+                <div class="moves">0 moves</div>
+                <div class="timer">Time: 0 sec</div>
+                <div class="points">Points: 0</div>
+                <div class="time-bar"></div> 
+            </div>
+        </div>
+        <div class="board-container">
+            <div class="board" data-dimension="4"></div>
+            <div class="win">
+                <div class="win-text"></div>
+                <div class="game-over"></div>
+            </div>
+        </div>
+    </div>
+    <audio id="flip-sound" src="flip_sound.mp3" preload="auto"></audio>
+    <audio id="right-sound" src="right_sound.mp3" preload="auto"></audio>
+    <audio id="background-music" src="background_music.mp3" preload="auto" loop></audio>
+    <audio id="win-sound" src="win_sound.mp3" preload="auto"></audio>    
+    <audio id="failed-sound" src="failed_sound.mp3" preload="auto"></audio>    
+    <audio id="pause-sound" src="pause_sound.mp3" preload="auto"></audio> 
+</body>
+</html>
